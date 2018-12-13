@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bglogin"
+    tools:context="com.example.alfinda.modul.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/blank_top" >
+    </View>
+
+    <TextView
+        android:id="@+id/txv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/blank_top"
+        android:text="Kuliner Ngalam"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txv_welcome"
+        android:text="Alfinda's and Revina's"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/blank_mid"
+        android:layout_below="@id/txv_version" >
+    </View>
+
+    <TextView
+        android:id="@+id/txv_login_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blank_mid"
+        android:text="Enter your Username and Password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout" >
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/txt_username"
+            android:hint="Username or Email" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txt_password"
+            android:hint="Password" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:text="LOG IN"
+        android:id="@+id/btn_login"
+        android:layout_below="@id/linearLayout"
+        android:onClick="button_onClick" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:id="@+id/blank_bottom"
+        android:layout_below="@id/btn_login" >
+    </View>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Remember Me"
+        android:textColor="@color/white"
+        android:layout_below="@id/blank_bottom"
+        android:id="@+id/chk_remember" />
+</RelativeLayout>

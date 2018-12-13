@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <TextView
+            android:id="@+id/tvIdMakanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="03"/>
+
+        <TextView
+            android:id="@+id/tvspasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvIdMakanan"
+            android:textSize="16sp"
+            android:text=" - "/>
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvspasi"
+            android:layout_alignParentTop="true"
+            android:hint="Nama Makanan"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgMakanan"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/tvMenu"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/default_user" />
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgMakanan"
+            android:layout_below="@id/tvHarga"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgMakanan"
+            android:hint="Rp 5000"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHarga"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgMakanan"
+            android:hint="Main Course"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvKategori"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgMakanan"
+            android:hint="Jl Kehausan no3 :"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvAlamat"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/imgMakanan"
+            android:hint="Makanannya enak tidak bikin enek"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvReview"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgMakanan"
+            android:hint="02-02-1998"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>
