@@ -8,7 +8,7 @@
 Kuliner Ngalam adalah sebuah aplikasi berbasis android yang berisi data review makanan atau kuliner yang ada di Kota Malang. Dengan aplikasi ini, user dapat melihat menu-menu hits yang ada di Kota Malang beserta keterangan seperti alamat, harga, dan review makanannya. 
 
 ## Screenshots
-![Layar Home](http://echarlie.co/wp-content/uploads/salon-booking-app-hareesh-dribbble-salon-design-app.jpg)
+https://drive.google.com/open?id=1j9TDHkh5ImopnI7gqUuU4x-Lq4CoOO_M
 
 ## Android OS dan Level
 min Sdk version yang digunakan adalah 22
@@ -35,7 +35,6 @@ min Sdk version yang digunakan adalah 22
 ## Referensi
 * [Rest-Server](https://github.com/chriskacerguis/codeigniter-restserver) - Rest Server
 * [Github](https://github.com/) - Untuk Kolaborasi proyek
-* [ROME](https://rometools.github.io/rome/) - Digunakan untuk ...
 
 ## Lisensi
 MIT License
